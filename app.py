@@ -131,7 +131,7 @@ deck = pdk.Deck(
     parameters={"depthTest": True},
 )
 
-components.html(deck.to_html(as_html_page_string=True), height=700, scrolling=False)
+components.html(deck.to_html(), height=700, scrolling=False)
 
 # ---------------------------------------------------------------------------
 # Footer
