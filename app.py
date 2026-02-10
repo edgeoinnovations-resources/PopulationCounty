@@ -125,12 +125,11 @@ tooltip = {
 deck = pdk.Deck(
     layers=[layer],
     initial_view_state=view_state,
-    tooltip=tooltip,
     map_style=map_style,
     parameters={"depthTest": True},
 )
 
-st.pydeck_chart(deck, use_container_width=True, height=700)
+st.pydeck_chart(deck, use_container_width=True, height=700, tooltip=tooltip)
 
 # ---------------------------------------------------------------------------
 # Footer
